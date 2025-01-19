@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/62a5e6c07c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo Mb.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Accueil</a></li>
+                <li><a href="#about">À propos de moi</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Expert Power BI</p>
+            <h1><span>Mohammed Boudlale</span></span><br> Data Analyst</h1>
+        </div>
+    </div>
+</div>
+<!-- ---------------À propos de moi---------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">À propos de moi</h1>
+                <p>Passionné par l’analyse et la valorisation des données,
+                   je suis un Data Analyst engagé à transformer les données en leviers stratégiques.
+                   Fort de mes expériences sur des projets variés, j’ai développé des tableaux de bord interactifs (Power BI, Looker)
+                   et automatisé des flux de travail, permettant des gains significatifs en efficacité et en précision.
+                   Mes compétences en SQL, Python et outils cloud (Azure, GCP) me permettent d’apporter des solutions innovantes 
+                   et adaptées aux besoins métiers. Collaboratif et orienté résultats, 
+                   je suis motivé par l’idée de donner du sens aux données pour accompagner les organisations vers leur succès.</p>
+
+                   <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('compétences')">Compétences</p>
+                    <p class="tab-links" onclick="opentab('expériences')">Expériences</p>
+                    <p class="tab-links" onclick="opentab('formations')">Formations</p>
+                   </div>
+                   <div class="tab-contents active-tab" id="compétences">
+                    <ul>
+                        <li><span>BI & Visualisation </span><br>Power BI<br>Looker<br>Google Data Studio<br>Tableau</li>
+                        <li><span>Clouds</span><br>GCP<br>AZURE</li>
+                        <li><span>Langages</span><br>SQL<br>Power Query<br>DAX<br>Python</li>
+                        <li><span>Outillage </span><br> Power Apps<br>Power Automate<br>Excel avancé</li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="expériences">
+                    <ul>
+                        <li><span>Sept 2023 – Mai 2024 </span><br>Data Engineer chez Weldom</li>
+                        <li><span>Juil 2022 – Août 2023</span><br>Data Analyst chez ALTEN</li>
+                        <li><span>Fév 2020 – Avr 2022</span><br>Data Analyst chez SNCF</li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="formations">
+                    <ul>
+                        <li><span>Diplômes </span><br>Diplôme Ingénieur en Analyse de Données – ESIEE <br> Diplôme Technicien Supérieur GMP – IUT Amiens </li>
+                        <li><span>Certifications </span><br>Google Data Analytics Professional – Google<br>Creating Business Value with Data and Looker – Google </li>
+                    </ul>
+                   </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- --------------services --------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Mes services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Data Cleaning & Data Preparation</h2>
+                <p>Correction des valeurs manquantes, des erreurs, suppression des doublon 
+                    pour Garantir l’exactitude et l’intégrité des donnée.Et Transformation, normalisation, enrichissement,
+                     fusion des sources pour transformer les données brutes en données prêtes à être utilisées 
+                     dans des analyses, modèles prédictifs ou visualisations. </p>
+                     <!--<a href="#">Plus de détails</a> -->
+            </div>
+            <div>
+                <i class="fa-solid fa-code-branch"></i>
+                <h2>Modélisation des données</h2>
+                <p>Création de représentations conceptuelles, logiques ou physiques des données et de leurs relations pour maximiser
+                     les performances,la simplicité et la flexibilité des analyses dans un environnement de data warehouse.
+                      Il permet aux entreprises de tirer rapidement des insights stratégiques à partir de grandes quantités 
+                      de données historiques </p>
+                     <!-- <a href="#">Plus de détails</a> -->
+            </div>
+            <div>
+                <i class="fa-solid fa-chart-simple"></i>
+                <h2>Data Visualisation & Design UX/UI</h2>
+                <p>Traduction des données en visuels pour mieux les comprendre. Optimisation de l'apparence des interfaces,
+                    pour offrir une expérience utilisateur (UX) agréable et intuitive tout en étant esthétiquement attrayantes (UI). </p>
+                     <!--<a href="#">Plus de détails</a> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------------- portfolio --------------------------------------- -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Mes Projets</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/rapport.PNG" alt="">
+                <div class="layer">
+                    <h3>Retail Insights 360°</h3>
+                    <p>Transformation d’un fichier CSV retail en une solution BI complète. Création d’une base SQL Server,
+                         nettoyage et modélisation des données, puis import dans Power BI. Conception de tableaux de bord
+                          interactifs répondant aux besoins des équipes (ventes, marketing, logistique) 
+                          avec une approche UX/UI optimisée.</p>
+                          <a href="projet_1.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/application.PNG" alt="">
+                <div class="layer">
+                    <h3>PowerFlow Analytics</h3>
+                    <p>A venir</p>
+                   <!-- <p>Développement d'une application Power Apps pour collecter des données, les centraliser dans une base de données,
+                         puis les exploiter dans Power BI. Le projet inclut la conception de l’application,
+                          l’intégration avec une base SQL, et la création de tableaux de bord dynamiques et interactifs.
+                           Objectif : offrir une solution complète pour la saisie, la gestion et l’analyse des données en temps réel,
+                            adaptée aux besoins opérationnels et stratégiques.</p>  -->
+                          <!--  <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/tableau de bord multi.png" alt="">
+                <div class="layer">
+                    <h3>Création de Tableaux de Bord Interactifs Multi-Outils</h3>
+                    <p>A venir</p>
+                   <!-- <p>Le projet "DataViz Fusion" consiste à créer des tableaux de bord interactifs en utilisant plusieurs
+                     logiciels de dataviz (Power BI, Tableau, Excel, etc.) pour analyser et visualiser des données provenant 
+                     de différentes sources. L'objectif est de fournir des insights clairs et dynamiques, adaptés aux besoins 
+                     des utilisateurs finaux, tout en mettant en valeur l’intégration des outils et la personnalisation des 
+                     visuels pour répondre aux exigences spécifiques de l’entreprise.</p> -->
+                        <!--  <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                </div>
+            </div>
+        </div>
+        <!--<a href="#" class="btn"> Voir plus</a> -->
+    </div>
+</div>
+
+<!-- --------------------------------- Contact ---------------------------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contactez-moi</h1>
+                <p><i class="fa-solid fa-at"></i> boudlalemohammed@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 06.25.91.17.38</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/mohammed-boudlale/">
+                        <p><i class="fa-brands fa-linkedin"></i> Linkedin</p>
+                    </a>
+                </div>
+                <a href="images/CV MB Data Analyst.pdf" download class="btn btn2">Télécharger CV</a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Mohammed Boudlale</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right= "0";  
+    }
+    function closemenu(){
+        sidemenu.style.right= "-300px";  
+    }
+</script>
+
+
+</body>
+</html>
