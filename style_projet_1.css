@@ -104,3 +104,31 @@ body {
     border-radius: 5px;
     margin: 15px 0;
 }
+
+/* Style pour le tableau du cahier des charges */
+.requirements-table {
+    width: 100%; /* Tableau prend toute la largeur du conteneur */
+    border-collapse: collapse; /* Supprime les espaces entre les bordures */
+    margin-top: 20px; /* Espace au-dessus du tableau */
+    color: #ffffff; /* Texte blanc */
+}
+
+.requirements-table th, .requirements-table td {
+    border: 1px solid #00C3CD; /* Bordures cyan */
+    padding: 10px; /* Espacement interne */
+    text-align: left; /* Texte aligné à gauche */
+}
+
+.requirements-table th {
+    background-color: #00C3CD; /* Fond cyan pour les en-têtes */
+    color: #000000; /* Texte noir pour contraste */
+    font-weight: bold; /* Texte en gras */
+}
+
+.requirements-table tbody tr:nth-child(even) {
+    background-color: #1a1a1a; /* Fond légèrement différent pour les lignes paires */
+}
+
+.requirements-table tbody tr:nth-child(odd) {
+    background-color: #2a2a2a; /* Fond pour les lignes impaires */
+}
