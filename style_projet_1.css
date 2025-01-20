@@ -99,8 +99,7 @@ body {
 
 /* Style des images */
 .section img {
-    max-width: 100%;
-    border: 2px solid #00C3CD;
+    max-width: 50%;
     border-radius: 5px;
     margin: 15px 0;
 }
