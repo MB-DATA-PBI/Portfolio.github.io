@@ -131,3 +131,27 @@ body {
 .requirements-table tbody tr:nth-child(odd) {
     background-color: #2a2a2a; /* Fond pour les lignes impaires */
 }
+
+/* Style pour la section de conclusion */
+.conclusion-section {
+    padding: 20px; /* Espacement interne */
+    margin: 30px auto; /* Espacement externe centré */
+    max-width: 800px; /* Largeur maximale */
+    background-color: #1a1a1a; /* Fond légèrement différent */
+    border: 1px solid #00C3CD; /* Bordure cyan */
+    border-radius: 8px; /* Bords arrondis */
+    color: #ffffff; /* Texte blanc */
+    text-align: center; /* Texte centré */
+    line-height: 1.6; /* Hauteur des lignes */
+}
+
+.conclusion-section h1 {
+    font-size: 2rem; /* Taille du titre */
+    color: #00C3CD; /* Couleur cyan */
+    margin-bottom: 15px; /* Espacement sous le titre */
+}
+
+.conclusion-section p {
+    font-size: 1.2rem; /* Taille du texte */
+    margin: 10px 0; /* Espacement entre les paragraphes */
+}
