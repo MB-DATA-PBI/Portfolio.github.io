@@ -24,6 +24,52 @@ body {
     color: #00C3CD; /* Couleur cyan lors du survol */
 }
 
+/* Conteneur du titre principal */
+.overview-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 20vh; /* Hauteur réservée au titre */
+    background-color: #1a1a1a; /* Fond légèrement différent */
+    border-bottom: 2px solid #00C3CD; /* Ligne séparatrice */
+}
+
+.overview-title h1 {
+    font-size: 3rem; /* Taille plus grande pour le titre principal */
+    color: #00C3CD; /* Couleur cyan */
+    margin: 0;
+}
+
+/* Conteneur de l'image d'aperçu */
+.overview-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.overview-image {
+    max-width: 50%; /* Taille de l'image */
+    border: 2px solid #00C3CD;
+    border-radius: 10px;
+}
+
+
+/* Conteneur du texte descriptif de l'objectif du projet */
+.project-objective {
+    max-width: 800px;
+    margin: 20px auto; /* Centré avec des marges */
+    padding: 10px;
+    text-align: center;
+    background-color: #1a1a1a; /* Fond légèrement différent */
+    border: 1px solid #00C3CD; /* Bordure cyan pour démarquer */
+    border-radius: 8px;
+    line-height: 1.6;
+    font-size: 1.2rem; /* Taille légèrement augmentée */
+    color: #ffffff;
+}
+
 /* Conteneur principal pour chaque section */
 .section {
     padding: 20px;
