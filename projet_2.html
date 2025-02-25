@@ -1,0 +1,248 @@
+<!-- Code HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation Projet Informatique</title>
+    <link rel="stylesheet" href="style_projet_2.css"> <!-- Lien vers le fichier CSS externe -->
+    <script src="https://kit.fontawesome.com/62a5e6c07c.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
+</head>
+<body>
+        <!-- Flèche en haut à gauche -->
+        <div class="back-arrow">
+            <a href="index.html"><i class="fa-solid fa-circle-arrow-left"></i></a>
+        </div>
+
+    <!-- Titre principal -->
+    <div class="overview-title">
+        <h1>De la Data à l’Action</h1>
+    </div>
+
+    <!-- Image d'aperçu du projet -->
+    <div class="overview-image-container">
+        <img src="images/Capture d'écran projet_2/30.png" alt="Aperçu du projet" class="overview-image">
+    </div>
+
+    <!-- Texte descriptif de l'objectif du projet -->
+    <div class="project-objective">
+        <p>
+            Objectif du projet : <br><br>
+            Dans le cadre de ce projet, j’ai travaillé sur le Brazilian E-Commerce Public Dataset by Olist,
+            une base de données riche contenant plusieurs tables interconnectées sur les commandes, les clients,
+            les vendeurs, les paiements et les produits vendus. L'objectif principal 
+            est de construire un dashboard interactif sous Excel permettant de suivre et d’analyser les 
+            performances des ventes selon plusieurs indicateurs clés.
+           </p>
+    </div>
+
+    <!-- Répétition de 10 sections pour présenter le projet -->
+    <!-- Section 1 -->
+    <div class="section">
+        <h1>Rencontre avec les Clients</h1> <!-- Titre principal -->
+        <h2>Rédaction du Cahier des Charges </h2> <!-- Sous-titre -->
+        <p>La première étape consiste à identifier les besoins spécifiques des utilisateurs finaux,
+             qu’ils soient stratégiques ou opérationnels.</p> <!-- Texte -->
+        <img src="images/Capture d'écran projet_2/0.PNG" alt="Illustration 1"> <!-- Image illustrative -->
+        <p>Cahier des charges : </p> <!-- Texte -->
+            <!-- Tableau du cahier des charges -->
+<table class="requirements-table">
+    <thead>
+        <tr>
+            <th>Section</th>
+            <th>Description</th>
+            <th>Détails Techniques</th>
+            <th>Visuels et Fonctionnalités</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td data-label="Section">1. Analyse des ventes</td>
+            <td data-label="Description">Suivi des tendances et des performances des ventes.</td>
+            <td data-label="Détails Techniques">Volume des ventes par année et par mois</td>
+            <td data-label="Visuels et Fonctionnalités">Graphique : évolution des ventes par mois et année</td>
+        </tr>
+        <tr>
+            <td data-label="Section">2. Top catégories</td>
+            <td data-label="Description">Analyse des meilleures catégories en termes de ventes.</td>
+            <td data-label="Détails Techniques">Top 10 des catégories les plus vendues, total des ventes</td>
+            <td data-label="Visuels et Fonctionnalités">Graphique : évolution des ventes des 10 meilleures catégories</td>
+        </tr>
+        <tr>
+            <td data-label="Section">3. Répartition géographique</td>
+            <td data-label="Description">Analyse des ventes par région et pays.</td>
+            <td data-label="Détails Techniques">Total des ventes par état au Brésil, proportion des ventes par pays</td>
+            <td data-label="Visuels et Fonctionnalités">Carte géographique interactive des ventes par état et par pays</td>
+        </tr>
+        <tr>
+            <td data-label="Section">4. Moyens de paiement</td>
+            <td data-label="Description">Étude de la répartition des paiements.</td>
+            <td data-label="Détails Techniques">Répartition des ventes par moyens de paiement</td>
+            <td data-label="Visuels et Fonctionnalités">Graphique circulaire : proportion des paiements par type</td>
+        </tr>
+        <tr>
+            <td data-label="Section">5. KPI et Performance Business</td>
+            <td data-label="Description">Indicateurs clés de performance des ventes.</td>
+            <td data-label="Détails Techniques">Total des ventes globales, nombre total de commandes</td>
+            <td data-label="Visuels et Fonctionnalités">Carte KPI affichant les ventes totales et le nombre de commandes</td>
+        </tr>
+        <tr>
+            <td data-label="Section">6. Analyse de la rentabilité</td>
+            <td data-label="Description">Identification des ventes les plus et les moins lucratives.</td>
+            <td data-label="Détails Techniques">Top ventes les plus lucratives et les moins lucratives</td>
+            <td data-label="Visuels et Fonctionnalités">Classement des meilleures et pires ventes</td>
+        </tr>
+        <tr>
+            <td data-label="Section">7. Filtres et interactivité</td>
+            <td data-label="Description">Faciliter l’exploration des données.</td>
+            <td data-label="Détails Techniques">Possibilité de filtrer les données par date et par catégorie de produit</td>
+            <td data-label="Visuels et Fonctionnalités">Slicers interactifs pour la sélection des dates et catégories</td>
+        </tr>
+    </tbody>
+</table>
+
+    </div>
+
+    <!-- Section 2 -->
+    <div class="section">
+        <h1>Importation et Exploration des Données</h1>
+        <p>On va exploiter les données du "Brazilian E-Commerce Public Dataset by Olist" issues du site Kaggle 
+            (https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+            . On va donc utiliser plusieurs fichiers CSV contenant des dizaines de milliers de lignes. 
+            Ces données détaillent les ventes d’un magasin fictif dans le secteur du retail au Brézil. 
+            <br>
+            <br>La première étape consiste à importer les différentes tables principales dans Excel :
+            <br>
+            <br> Orders (Commandes)
+            <br> Order Items (Détails des commandes)
+            <br> Products (Produits)
+            <br> Sellers (Vendeurs)
+            <br> Customers (Clients)
+            <br> Payments (Paiements)
+            <br>
+            <br> J’ai analysé la structure et les relations entre ces tables afin de comprendre comment les clés primaires
+             et étrangères permettent de les relier entre elles.</p>
+        <img src="images/Capture d'écran projet_2/0_Schéma_sémantique.PNG" alt="Illustration 2">
+ 
+    </div>
+
+    <!-- Section 3 -->
+    <div class="section">
+        <h1>Fusion des Données avec XLOOKUP</h1>
+        <p>Afin de simplifier l’exploitation des données, j’ai utilisé XLOOKUP pour fusionner 
+           les informations clés en une seule table consolidée. Cette table contient :
+            <br>
+            <br>Les informations des commandes (date, montant, client, statut)
+            <br> Les détails des articles vendus (catégorie, prix, quantité)
+            <br> Les données clients (localisation, état, pays)
+            <br> Les informations sur le paiement (montant, type de paiement)
+            <br> ...
+            </p>
+        <img src="images/Capture d'écran projet_2/9.png" alt="Illustration 3">
+        <p>J'en profite également pour formater les données décimales en remplaçant les points par des virgules.</p>
+    </div>
+
+    <!-- Section 4 -->
+    <div class="section">
+        <h1>Formatage des Données</h1>
+        <p>Une fois la fusion réalisée, j’ai effectué plusieurs opérations de data cleaning et formatting : <br> <br>
+            <br> Conversion des dates dans un format uniforme
+            <br> Conversion des montants en réal brésilien (BRL) et en dollars US (USD)
+            <br> Gestion des valeurs manquantes et suppression des données inutiles
+        </p>
+        <img src="images/Capture d'écran projet_2/12.png" alt="Illustration 4">
+        <img src="images/Capture d'écran projet_2/13.png" alt="Illustration 4.5">
+        <img src="images/Capture d'écran projet_2/14.png" alt="Illustration 4.8">
+
+    </div>
+
+    <!-- Section 5 -->
+    <div class="section">
+        <h1>Traduction des Catégories de Produits avec un Script VBA</h1>
+        <p>Les noms des catégories de produits étaient en portugais. Pour faciliter la lecture,
+             j’ai automatisé la traduction avec un script VBA, qui :
+            <br>
+            <br> Parcourt la colonne des catégories
+            <br> Remplace chaque valeur par sa traduction en anglais
+            <br> Applique la mise à jour directement sur la table consolidée
+            </p>
+        <img src="images/Capture d'écran projet_2/16.png" alt="Illustration 5">
+        <img src="images/Capture d'écran projet_2/16,5.png" alt="Illustration 5.1">
+    </div>
+
+    <!-- Section 6 -->
+    <div class="section">
+        <h1>Mise en Forme et Création des Tableaux Croisés Dynamiques </h1>
+        <p>J’ai mis en place une mise en forme conditionnelle pour rendre la table lisible et intuitive. 
+            Ensuite, j’ai construit plusieurs tableaux croisés dynamiques pour synthétiser les indicateurs 
+            définis dans le cahier des charges :
+            <br>
+            <br> Ventes par année et par mois
+            <br> Ventes par catégorie de produit (Top 10)
+            <br> Répartition des moyens de paiement
+            <br> Ventes par localisation (État du Brésil et pays)
+            <br>
+        </p>
+        <img src="images/Capture d'écran projet_2/19.png" alt="Illustration 6">
+        <img src="images/Capture d'écran projet_2/23.png" alt="Illustration 6.1">
+        <img src="images/Capture d'écran projet_2/25.png" alt="Illustration 6.2">
+        <img src="images/Capture d'écran projet_2/27.png" alt="Illustration 6.3">
+        <img src="images/Capture d'écran projet_2/26.png" alt="Illustration 6.4">
+
+    </div>
+
+    <!-- Section 7 -->
+    <div class="section">
+        <h1>Construction du Dashboard Dynamique</h1>
+        <p> À partir des Pivots Charts et Tables, j’ai conçu un dashboard interactif, structuré comme suit :
+            <br>
+            <br> Carte KPI affichant les ventes totales, le nombre de commandes et les transactions les plus lucratives
+            <br> Graphique d’évolution des ventes mensuelles et annuelles
+            <br> Graphique du Top 10 des catégories les plus vendues
+            <br> Carte géographique des ventes par état
+            <br> Camembert de répartition des moyens de paiement
+            <br> Slicers (filtres dynamiques) pour naviguer entre les dates et les catégories de produits
+            <br>
+        </p>
+        <img src="images/Capture d'écran projet_2/28.png" alt="Illustration 7">
+    </div>
+
+    <!-- Section 8 -->
+    <div class="section">
+        <h1>Amélioration UX/UI </h1>
+        <p>Enfin, j’ai travaillé sur l’expérience utilisateur en rendant le tableau de bord ergonomique et visuellement impactant :
+            <br>
+            <br> Utilisation de couleurs harmonieuses et contrastées pour distinguer les éléments clés
+            <br> Ajout de boutons interactifs et d’un menu de navigation
+            <br> Organisation logique et fluide des éléments visuels
+            <br>
+        </p>
+        <img src="images/Capture d'écran projet_2/29.png" alt="Illustration 8">
+        <img src="images/Capture d'écran projet_2/30.png" alt="Illustration 8.1">
+    </div>
+
+    <!-- Section de conclusion -->
+    <div class="conclusion-section">
+        <h1>Conclusion</h1>
+        <p>
+            Compétences Démontrées à Travers ce Projet
+            <br>
+            <br> Analyse et Compréhension des Données (Data Exploration)
+            <br> Manipulation des Données Relationnelles avec XLOOKUP
+            <br> Data Cleaning & Formatting
+            <br> Automatisation avec VBA (Traduction automatique des catégories)
+            <br> Création et Gestion de Tableaux Croisés Dynamiques
+            <br> Visualisation des Données avec des Graphiques Dynamiques
+            <br> Conception d’un Dashboard UX/UI Optimisé
+            <br>
+            <br>
+            Ce projet m’a permis de démontrer ma capacité à transformer un dataset brut en un outil interactif et pertinent pour la prise de décision business.
+            <br>
+            <br>
+            👉 Technologies utilisées : Excel (Power Query, Tableaux Croisés Dynamiques, Graphiques), VBA, XLOOKUP
+        </p>
+        <p>Merci pour votre attention.</p>
+    </div>
+
+</body>
+</html>

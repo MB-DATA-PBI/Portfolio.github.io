@@ -1,0 +1,272 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Fond noir */
+    color: #ffffff; /* Texte blanc */
+}
+
+/* Style de la flèche en haut à gauche */
+.back-arrow {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    z-index: 1000; /* Assure que la flèche est au-dessus des sections */
+}
+
+.back-arrow a {
+    text-decoration: none;
+    color: #ffffff; /* Couleur blanche de base */
+    transition: color 0.3s ease; /* Transition pour effet de survol */
+}
+
+.back-arrow a:hover {
+    color: #00C3CD; /* Couleur cyan lors du survol */
+}
+
+/* Conteneur du titre principal */
+.overview-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 20vh; /* Hauteur réservée au titre */
+    background-color: #1a1a1a; /* Fond légèrement différent */
+    border-bottom: 2px solid #00C3CD; /* Ligne séparatrice */
+}
+
+.overview-title h1 {
+    font-size: 3rem; /* Taille plus grande pour le titre principal */
+    color: #00C3CD; /* Couleur cyan */
+    margin: 0;
+}
+
+/* Conteneur de l'image d'aperçu */
+.overview-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.overview-image {
+    max-width: 50%; /* Taille de l'image */
+    border: 2px solid #00C3CD;
+    border-radius: 10px;
+}
+
+
+/* Conteneur du texte descriptif de l'objectif du projet */
+.project-objective {
+    max-width: 800px;
+    margin: 20px auto; /* Centré avec des marges */
+    padding: 10px;
+    text-align: center;
+    background-color: #1a1a1a; /* Fond légèrement différent */
+    border: 1px solid #00C3CD; /* Bordure cyan pour démarquer */
+    border-radius: 8px;
+    line-height: 1.6;
+    font-size: 1.2rem; /* Taille légèrement augmentée */
+    color: #ffffff;
+}
+
+/* Conteneur principal pour chaque section */
+.section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border: 1px solid #00C3CD; /* Bordure cyan pour démarquer */
+    border-radius: 8px;
+}
+
+/* Style des titres principaux */
+.section h1 {
+    font-size: 2rem;
+    color: #00C3CD; /* Couleur du titre principal */
+}
+
+/* Style des sous-titres */
+.section h2 {
+    font-size: 1.5rem;
+    color: #00A6B0; /* Couleur des sous-titres légèrement plus foncée */
+}
+
+/* Style des paragraphes de texte */
+.section p {
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Style des images */
+.section img {
+    max-width: 50%;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+/* Style pour le tableau du cahier des charges */
+.requirements-table {
+    width: 100%; /* Tableau prend toute la largeur du conteneur */
+    border-collapse: collapse; /* Supprime les espaces entre les bordures */
+    margin-top: 20px; /* Espace au-dessus du tableau */
+    color: #ffffff; /* Texte blanc */
+}
+
+.requirements-table th, .requirements-table td {
+    border: 1px solid #00C3CD; /* Bordures cyan */
+    padding: 10px; /* Espacement interne */
+    text-align: left; /* Texte aligné à gauche */
+}
+
+.requirements-table th {
+    background-color: #00C3CD; /* Fond cyan pour les en-têtes */
+    color: #000000; /* Texte noir pour contraste */
+    font-weight: bold; /* Texte en gras */
+}
+
+.requirements-table tbody tr:nth-child(even) {
+    background-color: #1a1a1a; /* Fond légèrement différent pour les lignes paires */
+}
+
+.requirements-table tbody tr:nth-child(odd) {
+    background-color: #2a2a2a; /* Fond pour les lignes impaires */
+}
+
+/* Style pour la section de conclusion */
+.conclusion-section {
+    padding: 20px; /* Espacement interne */
+    margin: 30px auto; /* Espacement externe centré */
+    max-width: 800px; /* Largeur maximale */
+    background-color: #1a1a1a; /* Fond légèrement différent */
+    border: 1px solid #00C3CD; /* Bordure cyan */
+    border-radius: 8px; /* Bords arrondis */
+    color: #ffffff; /* Texte blanc */
+    text-align: center; /* Texte centré */
+    line-height: 1.6; /* Hauteur des lignes */
+}
+
+.conclusion-section h1 {
+    font-size: 2rem; /* Taille du titre */
+    color: #00C3CD; /* Couleur cyan */
+    margin-bottom: 15px; /* Espacement sous le titre */
+}
+
+.conclusion-section p {
+    font-size: 1.2rem; /* Taille du texte */
+    margin: 10px 0; /* Espacement entre les paragraphes */
+}
+
+
+/* Styles pour les écrans de petite taille */
+@media (max-width: 768px) {
+    /* Marges et espacement global */
+    body {
+        padding: 10px; /* Réduit les marges générales */
+    }
+
+    /* Flèche de retour */
+    .back-arrow {
+        top: 5px; /* Ajuste la position */
+        left: 5px;
+        font-size: 20px; /* Réduit la taille */
+    }
+
+    /* Titre principal */
+    .overview-title h1 {
+        font-size: 2rem; /* Taille plus petite du titre principal */
+        line-height: 1.2; /* Réduit l'interligne */
+    }
+
+    /* Image d'aperçu */
+    .overview-image-container {
+        padding: 20px 0; /* Réduit l'espacement autour de l'image */
+    }
+
+    .overview-image {
+        max-width: 80%; /* Limite la largeur de l'image */
+        border-radius: 5px; /* Réduit le rayon des coins */
+    }
+
+    /* Texte descriptif */
+    .project-objective {
+        font-size: 1rem; /* Taille de texte réduite */
+        padding: 10px; /* Réduit les marges internes */
+    }
+
+    /* Sections générales */
+    .section {
+        padding: 15px; /* Réduit l'espacement interne */
+    }
+
+    .section h1 {
+        font-size: 1.5rem; /* Taille des titres réduite */
+    }
+
+    .section h2 {
+        font-size: 1.2rem; /* Taille des sous-titres réduite */
+    }
+
+    .section p {
+        font-size: 0.9rem; /* Taille de texte réduite */
+    }
+
+    .section img {
+        max-width: 100%; /* S'assure que l'image s'adapte à l'écran */
+    }
+
+    /* Tableau du cahier des charges */
+    .requirements-table {
+        width: 100%;
+        border-collapse: collapse; /* Supprime les espaces entre les bordures */
+        font-size: 0.9rem; /* Texte légèrement réduit */
+    }
+
+    .requirements-table thead {
+        display: none; /* Masque l'en-tête pour petits écrans */
+    }
+
+    .requirements-table tbody tr {
+        display: block; /* Transforme chaque ligne en bloc indépendant */
+        margin-bottom: 15px; /* Espace entre les "cartes" */
+        border: 1px solid #00C3CD; /* Bordure cyan autour de chaque "carte" */
+        border-radius: 5px; /* Arrondit les bords */
+        padding: 10px; /* Ajoute de l’espace interne */
+        background-color: #1a1a1a; /* Fond sombre pour les cartes */
+    }
+
+    .requirements-table td {
+        display: flex; /* Transforme chaque cellule en ligne avec un label et une valeur */
+        justify-content: space-between; /* Espace entre label et valeur */
+        padding: 10px 0; /* Espace interne vertical */
+        border-bottom: 1px solid #00C3CD; /* Ligne de séparation entre cellules */
+    }
+
+    .requirements-table td:last-child {
+        border-bottom: none; /* Supprime la bordure de la dernière cellule */
+    }
+
+    .requirements-table td::before {
+        content: attr(data-label); /* Affiche le label (nom de la colonne) */
+        font-weight: bold; /* Met le label en gras */
+        color: #00C3CD; /* Couleur cyan pour le label */
+        text-align: left; /* Aligne le label à gauche */
+        margin-right: 10px; /* Espace entre label et contenu */
+        flex-basis: 40%; /* Espace réservé pour les labels */
+    }
+
+    .requirements-table td {
+        text-align: right; /* Texte des valeurs aligné à droite */
+        flex-basis: 60%; /* Espace réservé pour les valeurs */
+        word-wrap: break-word; /* Permet de couper les longs textes */
+    }
+
+    /* Section de conclusion */
+    .conclusion-section {
+        padding: 15px; /* Réduit les marges internes */
+        font-size: 1rem; /* Réduit légèrement la taille du texte */
+    }
+
+    .conclusion-section h1 {
+        font-size: 1.5rem; /* Taille du titre réduite */
+    }
+}
